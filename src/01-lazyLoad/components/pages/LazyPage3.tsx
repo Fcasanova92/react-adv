@@ -7,7 +7,7 @@ interface Props {
 const LazyPage3: React.FC<Props> = () => {
   return (
     <div>
-      
+        <h1>LazyPage3</h1>
     </div>
   );
 };

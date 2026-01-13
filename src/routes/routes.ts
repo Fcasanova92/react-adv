@@ -14,15 +14,15 @@ const LazyLayout = lazy(() => import('../01-lazyLoad/layout/LazyLayout'));
 export const routes : Route[] = [
     {
         to: '/lazylayout',
-        path: 'lazylayout',
+        path: 'lazylayout/*',
         Component: LazyLayout,
         nombre: 'LazyLayout'
     },
 
         {
-        to: '/nolazylayout',
-        path: 'nolazylayout',
+        to: '/no-lazy-layout',
+        path: 'no-lazy-layout',
         Component: NoLazyLayout,
-        nombre: 'noLazyLayout'
+        nombre: 'NoLazyLayout'
     },
 ]
