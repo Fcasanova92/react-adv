@@ -2,11 +2,11 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  NavLink,
-  Navigate
+  NavLink
 } from 'react-router-dom';
 
 import logo from '../logo.svg';
+import { routes } from './routes';
 
 export const Navigation = () => {
   return (
@@ -30,10 +30,9 @@ export const Navigation = () => {
         {/* A <Routes> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Routes>
-          <Route path="/about" element={<h1>About</h1>} />
-          <Route path="/users" element={<h1>Users</h1>} />
-          <Route path="/home" element={<h1>Home</h1>} />
-          <Route path="/*" element={<Navigate to="/home" replace/>} />
+          {routes.map(({ to, Component, path, nombre }) => (
+            <Route key={ to } path={ path } element={ <Component /> } />
+          ))}
         </Routes>
       </div>
     </Router>
