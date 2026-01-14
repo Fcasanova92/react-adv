@@ -1,42 +1,21 @@
 import {
   BrowserRouter as Router,
-  Routes,
-  Route,
-  NavLink
 } from 'react-router-dom';
 import { Suspense } from 'react';
 
-import logo from '../logo.svg';
-import { routes } from './routes';
+import { LazyLayout } from '../01-lazyLoad/layout';
+import { NavBar } from '../01-lazyLoad/components/ui/NavBar';
+
 
 export const Navigation = () => {
   return (
+    <Suspense fallback={<div>Loading...</div>}>
     <Router>
       <div className="main-layout">
-        <nav>
-            <img src={ logo } alt="React Logo" />
-          
-          <ul>
-            {
-              routes.map( ({ to, nombre }) => (
-                <li key={ to }>
-                  <NavLink to={ to } className={({ isActive }) => isActive ? 'nav-active' : ''}>{ nombre }</NavLink>
-                </li>
-              ) )
-            }
-          </ul>
-        </nav>
-
-        {/* A <Routes> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-        <Suspense fallback={<div>Loading...</div>}>
-          <Routes>
-            {routes.map(({ to, Component, path }) => (
-              <Route key={ to } path={ path } element={ <Component /> } />
-            ))}
-          </Routes>
-        </Suspense>
+        <NavBar />
+        <LazyLayout />
       </div>
     </Router>
+    </Suspense>
   );
 }

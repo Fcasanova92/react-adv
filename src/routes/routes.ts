@@ -1,6 +1,4 @@
-import { LazyExoticComponent, ComponentType, lazy } from "react";
-import NoLazyLayout from "../01-lazyLoad/layout/NoLazyLayout";
-
+import React, { LazyExoticComponent, ComponentType } from "react";
 
 interface Route {
     to:string;
@@ -9,20 +7,30 @@ interface Route {
     nombre:string;
 }
 
-const LazyLayout = lazy(() => import('../01-lazyLoad/layout/LazyLayout'));
+const LazyPage1 = React.lazy( () => import('../01-lazyLoad/components/pages/LazyPage1') );
+const LazyPage2 = React.lazy( () => import('../01-lazyLoad/components/pages/LazyPage2') );
+const LazyPage3 = React.lazy( () => import('../01-lazyLoad/components/pages/LazyPage3') );  
 
 export const routes : Route[] = [
     {
-        to: '/lazylayout',
-        path: 'lazylayout/*',
-        Component: LazyLayout,
-        nombre: 'LazyLayout'
+        to: 'lazypage1',
+        path: 'lazypage1',
+        Component: LazyPage1,
+        nombre: 'LazyPage1'
     },
 
-        {
-        to: '/no-lazy-layout',
-        path: 'no-lazy-layout',
-        Component: NoLazyLayout,
-        nombre: 'NoLazyLayout'
+    {
+        to: 'lazypage2',
+        path: 'lazypage2',
+        Component: LazyPage2,
+        nombre: 'LazyPage2'
     },
+
+    {
+        to: 'lazypage3',
+        path: 'lazypage3',
+        Component: LazyPage3,
+        nombre: 'LazyPage3'
+    },
+
 ]
