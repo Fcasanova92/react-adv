@@ -1,11 +1,7 @@
-import { Navigation } from './routes/Navigation';
+import { AppRouter } from "./routes/AppRouter";
 
 function App() {
-  return (
-    <>
-      <Navigation />
-    </>
-  );
+  return <AppRouter />;
 }
 
 export default App;
