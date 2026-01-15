@@ -6,9 +6,10 @@ import {
 } from "react-router-dom";
 import { Suspense } from "react";
 import { routes } from "./routes";
-import { MainLayout } from "../01-lazyLoad/layout/MainLayout";
+import { MainLayout } from "../layout/MainLayout";
 
-export const AppRouter = () => {
+
+export const LazyAppRouter = () => {
   return (
     <Router>
       <MainLayout>

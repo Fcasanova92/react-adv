@@ -1,0 +1,1 @@
+export {routes as routePages} from './route';

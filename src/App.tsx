@@ -1,7 +1,9 @@
-import { AppRouter } from "./routes/AppRouter";
+import { LazyAppRouter } from "./lazyLoad/routes/LazyAppRouter";
+import { NestedLayout } from "./nestedLayout/NestedLayout";
+
 
 function App() {
-  return <AppRouter />;
+  return <NestedLayout />;
 }
 
 export default App;

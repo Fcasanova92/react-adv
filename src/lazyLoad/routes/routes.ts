@@ -8,13 +8,13 @@ interface Route {
 }
 
 const LazyPage1 = React.lazy(
-  () => import("../01-lazyLoad/components/pages/LazyPage1")
+  () => import("../components/pages/LazyPage1")
 );
 const LazyPage2 = React.lazy(
-  () => import("../01-lazyLoad/components/pages/LazyPage2")
+  () => import("../components/pages/LazyPage2")
 );
 const LazyPage3 = React.lazy(
-  () => import("../01-lazyLoad/components/pages/LazyPage3")
+  () => import("../components/pages/LazyPage3")
 );
 
 export const routes: Route[] = [
