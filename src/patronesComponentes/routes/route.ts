@@ -1,6 +1,6 @@
 
 
-import { IRoute } from "../../../interfaces/route.interface";
+import { IRoute } from "../../interfaces/route.interface";
 import ShopPages from "../pages/ShopPages";
 
 export const routes: IRoute[] = [

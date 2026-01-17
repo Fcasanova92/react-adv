@@ -1,6 +1,6 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import { routes } from "./route";
-import { MainLayout } from "../../../layout/MainLayout";
+import { MainLayout } from "../../layout/MainLayout";
 
 export const ShopPagesRouter = () => {
   return (

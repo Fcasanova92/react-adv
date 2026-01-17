@@ -1,5 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
-import { ShopPagesRouter } from "./patronesComponentes/compoundComponentPattern/routes/ShopPagesRouter";
+import { ShopPagesRouter } from "./patronesComponentes/routes/ShopPagesRouter";
 
 
 function App() {

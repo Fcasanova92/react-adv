@@ -5,12 +5,11 @@ export interface ProductCardProps {
   children?: ReactElement | ReactElement[];
 }
 
-interface Product {
+export interface Product {
   title: string;
   imgUrl: string;
   description: string;
 }
-
 export interface ProductCardContextProps {
     counter: number;
     incrementBy: (value: number) => void;
