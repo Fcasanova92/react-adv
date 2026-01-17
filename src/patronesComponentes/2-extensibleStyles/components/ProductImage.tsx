@@ -1,5 +1,5 @@
-import styles from "../styles/style.module.css";
-import noImg from "../assets/no-image.jpg";
+import styles from "../../styles/style.module.css";
+import noImg from "../../assets/no-image.jpg";
 import { useProductCardContext } from "../context/productContext";
 
 export const ProductImage = ({img = ""} : {img?: string}) => {

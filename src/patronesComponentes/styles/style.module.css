@@ -19,6 +19,11 @@
     margin: 10px;
 }
 
+.productTitle {
+    font-weight: bold;
+    font-size: 18px;
+}
+
 .buttonsContainer {
     margin: 10px;
     display: flex;

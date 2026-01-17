@@ -1,5 +1,6 @@
 
-import { CompundComponentPattern } from "../1-compoundComponentPattern/CompundComponentPattern";
+// import { CompundComponentPattern } from "../1-compoundComponentPattern/CompundComponentPattern";
+import { ExtensibleStylesComponent } from "../2-extensibleStyles/ExtensibleStylesComponent";
 // import { ExtensibleStylesComponent } from "../2-extensibleStyles/ExtensibleStylesComponent";
 // import { ControlPropsComponent } from "../3-controlProps/ControPropsComponent";
 
@@ -8,7 +9,7 @@ const ShopPages = ({}) => {
     <>
       <h1>ShopPages</h1>
       <hr />
-      <CompundComponentPattern/>
+      <ExtensibleStylesComponent/>
     </>
   );
 };

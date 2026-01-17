@@ -1,6 +1,7 @@
 import { createContext, useContext } from "react";
 import { ProductCardContextProps } from "../../interfaces";
 
+
 const ProductCardContext = createContext({} as ProductCardContextProps);
 
 export const { Provider } = ProductCardContext;

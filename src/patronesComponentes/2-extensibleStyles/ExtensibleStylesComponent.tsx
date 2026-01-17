@@ -13,7 +13,7 @@ export const ExtensibleStylesComponent = () => { {
     return (
     <ProductCard product={product} className={style.productCardDark}>
         <ProductCard.Image/>
-        <ProductCard.Title title=""/>
+        <ProductCard.Title title="" className={style.productTitleWhite}/>
         <ProductCard.Buttons />
       </ProductCard>
     )
