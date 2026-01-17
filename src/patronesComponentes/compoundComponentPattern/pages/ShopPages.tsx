@@ -1,4 +1,5 @@
-import {ProductCard} from "../ProductCard";
+
+import { ProductCard } from "../components";
 import cofeeMug from "/coffee-mug.png";
 
 const product = {

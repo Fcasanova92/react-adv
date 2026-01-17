@@ -1,8 +1,7 @@
 import styles from "../styles/style.module.css";
-import { useProducto } from "./hooks/useProducto";
-import { ProductCardProps } from "../interfaces";
-import { ProductCardProvider } from "./context/ProductCardProvider";
-import { ProductButtons, ProductImage, ProductTitle } from "./components";
+import { useProducto } from "../hooks/useProducto";
+import { ProductCardProps } from "../../interfaces";
+import { ProductCardProvider } from "../context/ProductCardProvider";
 
 
 export const ProductCard = ({ children, product } : ProductCardProps) => {
@@ -17,6 +16,3 @@ export const ProductCard = ({ children, product } : ProductCardProps) => {
   );
 };
 
-ProductCard.Title = ProductTitle;
-ProductCard.Image = ProductImage;
-ProductCard.Buttons = ProductButtons;
