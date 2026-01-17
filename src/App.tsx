@@ -1,9 +1,13 @@
-import { LazyAppRouter } from "./lazyLoad/routes/LazyAppRouter";
-import { NestedLayout } from "./nestedLayout/NestedLayout";
+import { BrowserRouter } from "react-router-dom";
+import { ShopPagesRouter } from "./patronesComponentes/compoundComponentPattern/routes/ShopPagesRouter";
 
 
 function App() {
-  return <NestedLayout />;
+  return (
+     <BrowserRouter>
+       <ShopPagesRouter />
+     </BrowserRouter>
+  );
 }
 
 export default App;

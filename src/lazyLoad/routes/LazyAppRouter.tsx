@@ -6,13 +6,13 @@ import {
 } from "react-router-dom";
 import { Suspense } from "react";
 import { routes } from "./routes";
-import { MainLayout } from "../layout/MainLayout";
+import { MainLayout } from "../../layout/MainLayout";
 
 
 export const LazyAppRouter = () => {
   return (
     <Router>
-      <MainLayout>
+      <MainLayout routes={routes}>
         <Suspense fallback={<div>Loading...</div>}>
           <Routes>
             {routes.map(({ path, Component }) => (
