@@ -1,0 +1,3 @@
+El Compound Component Pattern permite crear componentes que trabajan juntos y comparten estado implícitamente, dando una API declarativa y flexible, donde el usuario compone la UI usando subcomponentes sin pasar props manualmente utilizando un provider.
+Basicamente se crea un HOC (high order component) el cual recibira como hijos una serie de componentes que proveemos, title, img, buttons, de manera que mediante un contexto, comparten estado e informacion implicitamente.
+La ventaja de este patron de diseño es que es totalmente flexible para el usuario, ya que tiene la libertad de elegir que hijos mostrar, es decir, si mostrar un titulo o dos, imagenes, o una combinacion de ambas.
