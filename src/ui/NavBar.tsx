@@ -1,12 +1,12 @@
 import { NavLink } from "react-router-dom";
-import logo from "../../../logo.svg";
-import { IRoute } from "../interfaces/Route.interface";
+import logo from "../logo.svg";
+import { IRoute } from "../interfaces/route.interface";
 
 type NavBarProps = {
   routes: IRoute[];
 };
 
-export const NavBar = ({routes}: NavBarProps) => {
+export const NavBar = ({ routes }: NavBarProps) => {
   return (
     <nav>
       <img src={logo} alt="React Logo" />

@@ -1,11 +1,12 @@
+import ProductCard from "../components/ProductCard";
 
-const ShopPages = ({  }) => {
+const ShopPages = ({}) => {
   return (
-<>
-<h1>ShopPages</h1>
-<hr />
-
-</>
+    <>
+      <h1>ShopPages</h1>
+      <hr />
+      <ProductCard />
+    </>
   );
 };
 

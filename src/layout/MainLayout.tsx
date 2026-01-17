@@ -1,4 +1,4 @@
-import { IRoute } from "../interfaces/Route.interface";
+import { IRoute } from "../interfaces/route.interface";
 import { NavBar } from "../ui/NavBar";
 
 interface MainLayoutProps {
